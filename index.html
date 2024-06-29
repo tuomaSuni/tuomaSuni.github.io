@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tuomas Suni</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">Tuomas Suni</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Tuomas Suni</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+        <section id="profile">
+            <div class="section_pic-container">
+                <img src="./assets/photo.png" alt="Tuomas Suni"/>
+            </div>
+            <div class="section_text">
+                <p class="section_text_p1">Hello. I am</p>
+                <h1 class="title">Tuomas</h1>
+                <p class="section_text_p2">I ❤️ <span></span></p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/cv_TuomasSuni.pdf')">Download my CV</button>
+                    <button class="btn btn-color-1" onclick="window.open('./assets/pf_TuomasSuni.pdf')">See my Art</button>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <p class="section_text_p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section_pic-container">
+                    <img src="./assets/about.jpg" alt="About icon" class="about-pic"/>
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
+                            <h3>Experience</h3>
+                            <p>5+ years of Programming</p>
+                            <p>1+ years of Digital Marketing</p>
+                            <p>1+ years of Modeling & Shaders</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./assets/education.png" alt="Education icon" class="icon"/>
+                            <h3>Education</h3>
+                            <p>Bachelors Degree, (B.Eng)</p>
+                            <p>Information and Communications Technology</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>
+                            Hello. I am Tuomas, a 23-year old ICT engineering graduate from Turku, Finland. I have a wide variety of experience in software engineering, digital art, project management and market research.
+                            <br><br>
+                            I did my thesis about the globalization of the video games industry and market,
+                            where I researched how video games has evolved during its 70 years long history and how it has shaped the culture around them.
+                            <br><br>
+                            Check it out Finnish <a style="text-underline-offset: 0.1rem;" onclick="href='https://urn.fi/URN:NBN:fi:amk-202403154459'" target="_blank">here</a>!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onClick="location.href='./#skills'"/>
+        </section>
+        <section id="skills">
+            <p class="section_text_p1">Explore My</p>
+            <h1 class="title">Skills!</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Programming</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>C#</h3>
+                                    <p>Advanced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>C++</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>Python</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>Javascript</h3>
+                                    <p>Basics</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Basics</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>Basics</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Development</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>Unity</h3>
+                                    <p>Advanced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>Unreal</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>Blender</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>Gimp</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>Audacity</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>Git</h3>
+                                    <p>Familiar</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onClick="location.href='./#projects'"/>
+        </section>
+        <section id="projects">
+            <p class="section_text_p1">Browse some of my</p>
+            <h1 class="title">Projects</h1>
+            <div>
+                <div class="experience-details-container">
+                    <div class="about-containers">
+                        <div class="details-container color-container project-container" id="explanation-1">
+                            <div class="front">
+                                <div class="article-container">
+                                    <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+                                </div>
+                                <h2 class="experience-sub-title project-title">Multiplayer Escape Room Game in Virtual Reality</h2>
+                                <div class="btn-container">
+                                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://www.dropbox.com/scl/fi/kc1i0k5wtkcqhk3d7m0yo/PedaXR.mp4?rlkey=vk57iqkkvqfbrb9186j9vo03p&dl=0')">Live Demo</button>
+                                    <button class="btn btn-color-2 project-btn" onclick="flip('explanation-1', 'rotateY(180deg)')">Show More</button>
+                                </div>
+                            </div>
+                            <div class="back" onclick="flip('explanation-1', 'rotateY(0deg)')">
+                                <div class="article-container">
+                                    <p>✅ Lead programmer in a logic-based virtual reality serious game supporting multiplayer.</p>
+                                    <p>✅ Utilized technologies included <b>Unity3D</b>, <b>XR Interaction Toolkit</b> and <b>Netcode for Gameobjects</b>.</p>
+                                    <p>✅ Application is currently in an educational use as a simulation environment for the occupational therapist students.</p>
+                                    <br><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details-container color-container project-container" id="explanation-2">
+                            <div class="front">
+                                <div class="article-container">
+                                    <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+                                </div>
+                                <h2 class="experience-sub-title project-title">Point Cloud Optimization in Unity</h2>
+                                <div class="btn-container">
+                                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://www.dropbox.com/scl/fo/5g4rbq6ta5owsdci3x1d9/ACOyxwy-8okc5qEUk_dMSoM?rlkey=cdfdvx0lwprgdnpy4ug0aopa0&st=jeh5s06l&dl=0')">Live Demo</button>
+                                    <button class="btn btn-color-2 project-btn" onclick="flip('explanation-2', 'rotateY(180deg)')">Show More</button>
+                                </div>
+                            </div>
+                            <div class="back" onclick="flip('explanation-2', 'rotateY(0deg)')">
+                                <div class="article-container">
+                                    <p>✅ Researched the possibilities of utilizing 3D Scanned environment data in VR applications.</p>
+                                    <p>✅ Delivered a set of parameters for optimized point cloud visualization in Unity3D.</p>
+                                    <p>✅ All tests were carried out utilizing a customized commercial <b>Point Cloud Viewer</b> and <b>Meta XR Core SDK</b> plug-ins.</p>
+                                    <br><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details-container color-container project-container" id="explanation-3">
+                            <div class="front">
+                                <div class="article-container">
+                                    <img src="./assets/project-3.png" alt="Project 3" class="project-img">
+                                </div>
+                                <h2 class="experience-sub-title project-title">Game Development & Publishment Project</h2>
+                                <div class="btn-container">
+                                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://joonas94.itch.io/smash-o-scope')">Live Demo</button>
+                                    <button class="btn btn-color-2 project-btn" onclick="flip('explanation-3', 'rotateY(180deg)')">Show More</button>
+                                </div>
+                            </div>
+                            <div class="back" onclick="flip('explanation-3', 'rotateY(0deg)')">
+                                <div class="article-container">
+                                    <p>✅ Project manager and a lead programmer in game development project.</p>
+                                    <p>✅ Learned programming in a codebase maintained by several developers and coordination of a team consisting of programmers, graphics- and audio designers.</p>
+                                    <p>✅ The objective was to develop a game with simple enough core mechanics to allow the player to quickly understand the objective of the game and being easily demonstratable at a game fair.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onClick="location.href='./#contact'"/>
+        </section>
+        <section id="contact">
+            <p class="section_text_p1">Get in Touch</p>
+            <h1 class="title">Contact</h1>
+            <div class ="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./assets/email.png" alt="Email icon" class="icon contact-icon">
+                    <p><a href="mailto:tuomas.suni@mail.com">tuomas.suni@mail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./assets/phone.jpg" alt="Phone icon" class="icon contact-icon">
+                    <p href="mailto:tuomas.suni@mail.com">+358 45 233 8324</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Copyright &#169; 2024 Tuomas Suni. All Rights Reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
