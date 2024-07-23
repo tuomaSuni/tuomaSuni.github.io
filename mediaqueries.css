@@ -38,10 +38,13 @@
     .about-containers {
         margin-top: 0;
     }
+    .projects-container{
+        grid-template-columns: repeat(2, 2fr);
+    }
 }
 
 @media screen and (max-width: 600px) {
-    #contact, footer {
+    #contact {
         height: 40vh;
         margin-top: 10rem;
     }
@@ -89,5 +92,8 @@
     }
     .text-container {
         text-align: justify;
+    }
+    .projects-container{
+        grid-template-columns: repeat(1, 1fr);
     }
 }

@@ -391,7 +391,8 @@ article .icon {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    height: 80vh;
+    margin-top: 15rem;
 }
 
 .contact-info-upper-container {
@@ -425,10 +426,17 @@ article .icon {
 /* FOOTER SECTION */
 
 footer p {
-    text-align: center;
+    position: absolute;
 }
 
 /* #PROJECTS */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px;
+}
 
 .project-container {
     transform-style: preserve-3d;
