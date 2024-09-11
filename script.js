@@ -6,7 +6,7 @@ function toggleMenu() {
 }
 
 const dynamicText = document.querySelector(".section_text_p2 span");
-const words = ["Development!", "Art!", "Marketing!"];
+const words = ["Programming!", "Art!", "Audio!"];
 
 let wordIndex = 0;
 let charIndex = 0;
